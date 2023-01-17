@@ -1,27 +1,32 @@
-import './App.css';
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './components/css/App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import ContactForm from './components/ContactForm'
+// import ContactView from './pages/ContactView';
 import { Routes, Route } from 'react-router-dom';
-import ContactForm from './components/ContactForm'
+// import Fade from 'react-reveal/Fade';
+import Buttons from './components/Buttons';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ContactView from './pages/ContactView';
-import HomeView from './pages/HomeView';
-import ServicesView from './pages/ServicesView';
+import './index.css';
+
 
 
 function App() {
+  
+
   return (
     <div>
-      {/* <HomeView/> */}
+      <Navbar/>
+      <Buttons/>
+
       <Routes>
-        <Route path="/" element={<HomeView/>}/>
-        <Route path="/services" element={<ServicesView/>}/>
-
-
+       
       </Routes>
-    
+      {/* <ContactForm/> */}
+      
+      
     </div>
   );
 }
 
 export default App;
+

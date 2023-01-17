@@ -1,0 +1,19 @@
+@import './fonts.css';
+@import './scss/custom.css';
+@import './input.css';
+
+
+:root {
+  --primary: #2E83B7;
+  --secondary: #E77338;
+  --success: #289A82;
+  --danger: #D25425;
+  --info: #50A6D3;
+}
+
+.fullscreen {
+    min-height: 120vh;
+};
+
+
+
